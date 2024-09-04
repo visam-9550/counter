@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript Tutorial</title>
+    <style>
+        .heading{
+            color: red;
+        }
+        .main-container{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+        }
+        .button-container{
+            display: flex;
+            align-items: center;
+        }
+        .button{
+            margin: 40px;
+            padding: 10px;
+            font-family: "Roboto";
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
+            border-style: none;
+            border-radius: 7px;
+            background-color: black;
+            cursor: pointer;
+            transition: all 2s;
+        }
+        .increse:hover{
+            background-color: green;
+            height: 40px;
+            width: 150px;
+            font-weight: bold;
+        }
+        .decrese:hover{
+            background-color: red;
+            height: 40px;
+            width: 150px;
+            font-weight: bold;
+        }
+        .count{
+            font-weight: bold;
+            font-size: 32px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class = "main-container">
+        <h1 class = "heading" id = "heading">Counter</h1>
+        <h3 class ="count" id = "counter">0</h3>
+        <div class="button-container">
+            <button class="button increse" type = "button" onclick = {clickOnIncrementButton()} id = "decrementButton">Increment</button>
+            <button class="button reset" type = "button" onclick = {clickOnResetButton()} id = "resetButton">Reset</button>
+            <button class="button decrese" type = "button" onclick = {clickOnDecrementButton()} id = "incrementButton">Decrement</button>
+        </div>
+        
+
+    </div>
+
+    <script src="myscripts.js"></script>
+</body>
+</html>
